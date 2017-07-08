@@ -1,0 +1,67 @@
+<link rel="stylesheet" type="text/css" href="validation.css">
+  <form action="form.html" method="POST">
+    <fieldset>
+    	<legend>Loan Application</legend>
+    	<label for="firstname" >Enter your first name:</label>
+    	<input type="text" name="firstname">
+    	<br>
+    	<label for="middleinitial">Enter your middle initial:</label>
+    	<input type="text" name="middleinitial">
+    	<br>
+    	<label for="lastname">Enter your last name:</label>
+    	<input type="text" name="lastname">
+    	<br>
+    	<label for="address">Enter your address:</label>
+    	<input type="text" name="address">
+    	<br>
+    	<label for="occupation">Enter your occupation:</label>
+    	<input type="text" name="occupation">
+    	<br>
+    	<label for="employer">Enter your employer:</label>
+    	<input type="text" name="employer">
+    	<br>
+    	<label for="employeraddress">Enter your employer address:</label>
+    	<input type="text" name="employeraddress">
+    	<br>
+    	<label for="loan-type">Loan Type</label>
+    	<select id="loan-type" name="type">
+    	<option>Commercial</option>
+    	<option>Real Estate</option>
+    	<option>Personal</option>
+    	<option>Mortgage</option>
+    	</select>
+    	<br>
+    	<label for="reqloan">Enter your requested amount of loan:</label>
+    	<input type="number" name="reqloan">
+    	<br>
+    	<label for="loanlength">Loan Length:</label>
+    	<input type="radio" name="loanlength" value="5"> 5 Years
+    	<input type="radio" name="loanlength" value="15"> 15 Years
+    	<input type="radio" name="loanlength" value="30"> 30 Years
+    	<br>
+    	<label for="specialconditions">Special Conditions:</label>
+    	<input type="checkbox" name="conditions" value="1"> I have a down payment.
+    	<input type="checkbox" name="conditions" value="1"> Out-of-state resident.
+    	<input type="checkbox" name="conditions" value="1"> Married.
+    	<input type="checkbox" name="conditions" value="1"> Loan will be co-signed.
+	</fieldset>
+
+	<fieldset>
+    	<legend>Any Additional Information</legend>  
+    	<textarea ="comments" name="comments"></textarea>
+    </fieldset>
+
+ 	<fieldset>
+ 		<legend>Contact Information</legend> 
+ 		<label for="email">Enter your email</label>
+	    <input type="email" name="email" required>
+	    <br/>
+    	<label for="telephone">Enter your mobile number</label>
+    	<input type="tel" name="telephone" required>
+    	<br/>
+    	<label for="linkedinurl">Enter your linked in URL</label>
+    	<input type="url" name="linkedinurl" required>
+ 	</fieldset>
+    <input type="submit" value="Submit Details"></input>
+  </form>
+
